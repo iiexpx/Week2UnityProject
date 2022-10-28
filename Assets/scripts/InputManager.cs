@@ -4,28 +4,29 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
-    private PlayerInput playerInput;
-    private PlayerInput.OnFootActions onFoot;
+    private Playerinput playerInput;
+    private Playerinput.OnFootActions onFoot;
 
-    private PlayerMotor motor;
+    private PlayerMoter motor;
     // Start is called before the first frame update
     void Awake()
     {
-        playerInput = new PlayerInput();
+        playerInput = new Playerinput();
         onFoot = playerInput.OnFoot;
-        motor = GetComponent<PlayerMotor>();
+        motor = GetComponent<PlayerMoter>();
+        onFoot.Jump.performed += ctx => motor.Jump();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //tell the playermoter to  move using the value form our movement action
-        motor.Processmove(onFoot.Movement.ReadValue<Vector2>());
+        motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
     }
 
     private void OnEnable()
     {
-        onFoot.Enable()
+        onFoot.Enable();
     }
     private void OnDisable()
     {
