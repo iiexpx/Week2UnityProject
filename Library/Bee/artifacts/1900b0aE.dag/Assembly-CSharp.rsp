@@ -393,6 +393,8 @@
 "Assets/Obscure045/BuiltIn RP/Demos/Scriptable Dynamic Crosshair/Scripts/Sample.cs"
 "Assets/Obscure045/Inputs/SampleInputs.cs"
 "Assets/scripts/InputManager.cs"
+"Assets/scripts/Interactable.cs"
+"Assets/scripts/PlayerInteract.cs"
 "Assets/scripts/PlayerLook.cs"
 "Assets/scripts/PlayerMoter.cs"
 -langversion:9.0
