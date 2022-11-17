@@ -185,15 +185,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "6338f2e5-e207-4785-82de-0ad88ccd08ac",
+                    "name": "One Modifier",
+                    "id": "63e305e3-2f84-4712-a739-126e75ae2b3a",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "829c1cd8-4963-4e5a-86f2-b0346e2dd0cd",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "16af8901-08df-456f-949c-79a64f5559f9",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Look",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",

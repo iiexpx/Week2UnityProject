@@ -42,7 +42,7 @@ public class PlayerMoter : MonoBehaviour
             }
         }
     }
-    //receive the inputs for our InputManager.cs and apply them to our character controller.
+    //receive the inputs from the InputManager.cs and apply them to our character controller.
     public void ProcessMove(Vector2 input)
     {
         Vector3 moveDirection = Vector3.zero;
